@@ -4,4 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="416dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/1"
+                android:layout_width="117dp"
+                android:layout_height="64dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/3"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/+"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/4"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/-"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/7"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/8"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/9"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/*"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <Button
+                android:id="@+id/0"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="105dp"
+                android:layout_height="63dp"
+                android:text="c" />
+
+            <Button
+                android:id="@+id/coma"
+                android:layout_width="77dp"
+                android:layout_height="63dp"
+                android:text="." />
+
+            <Button
+                android:id="@+id/="
+                android:layout_width="64dp"
+                android:layout_height="63dp"
+                android:text="=" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
