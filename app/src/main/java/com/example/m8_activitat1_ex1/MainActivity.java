@@ -9,24 +9,25 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    float valor1 =0;
+    float valor2 =0;
+     boolean suma =false ;
+     boolean resta=false;
+     boolean multiplica=false;
+
+
+     EditText EditText;
+
+     Button b0, b1, b2, b3, b4, b5, b6,
+            b7, b8, b9, bsuma, bmultiplica,
+            bresta, besborra, bigual,bcoma;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         float valor1;
-         final float valor2;
-         final boolean suma;
-         final boolean resta;
-         final boolean multiplica;
 
-
-        final EditText EditText;
-
-
-        final Button b0, b1, b2, b3, b4, b5, b6,
-                b7, b8, b9, bsuma, bmultiplica,
-                bresta, besborra, bigual,bcoma;
 
 
 
@@ -136,16 +137,16 @@ public class MainActivity extends AppCompatActivity {
         // METODOS OPERACIONES
 
 
-
         bsuma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if (EditText == null) {
-                   EditText.setText("");
+                    EditText.setText("");
                 } else {
+                    valor1 = Float.parseFloat(EditText.getText() + "");
+                    suma = true;
                     EditText.setText(null);
-                    suma=true;
                 }
             }
         });
@@ -163,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 valor1 = Float.parseFloat(EditText.getText() + "");
-                 multiplica = true;
+                multiplica = true;
                 EditText.setText(null);
             }
         });
@@ -190,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
                     multiplica = false;
                 }
 
+
             }
         });
 
@@ -204,9 +206,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText.setText(EditText.getText() + ".");
-
             }
         });
+
+
+
+
 
     }
 }
