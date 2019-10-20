@@ -14,16 +14,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+         float valor1;
+         final float valor2;
+         final boolean suma;
+         final boolean resta;
+         final boolean multiplica;
+
+
         final EditText EditText;
 
 
-        Button b0, b1, b2, b3, b4, b5, b6,
+        final Button b0, b1, b2, b3, b4, b5, b6,
                 b7, b8, b9, bsuma, bmultiplica,
                 bresta, besborra, bigual,bcoma;
 
-        float valor1, valor2;
 
-        boolean suma, resta, multiplica;
+
 
 
         b0 = (Button) findViewById(R.id.b0);
@@ -126,6 +132,81 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+        // METODOS OPERACIONES
+
+
+
+        bsuma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (EditText == null) {
+                   EditText.setText("");
+                } else {
+                    EditText.setText(null);
+                    suma=true;
+                }
+            }
+        });
+
+        bresta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valor1 = Float.parseFloat(EditText.getText() + "");
+                resta = true;
+                EditText.setText(null);
+            }
+        });
+
+        bmultiplica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valor1 = Float.parseFloat(EditText.getText() + "");
+                 multiplica = true;
+                EditText.setText(null);
+            }
+        });
+
+
+
+        bigual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valor2 = Float.parseFloat(EditText.getText() + "");
+
+                if (suma == true) {
+                    EditText.setText(valor1 + valor2 + "");
+                    suma = false;
+                }
+
+                if (resta == true) {
+                    EditText.setText(valor1 - valor2 + "");
+                    resta = false;
+                }
+
+                if (multiplica == true) {
+                    EditText.setText(valor1 * valor2 + "");
+                    multiplica = false;
+                }
+
+            }
+        });
+
+        besborra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText.setText("");
+            }
+        });
+
+        bcoma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText.setText(EditText.getText() + ".");
+
+            }
+        });
 
     }
 }
