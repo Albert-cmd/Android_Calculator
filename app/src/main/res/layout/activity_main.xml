@@ -8,14 +8,10 @@
 
     <TableLayout
         android:layout_width="353dp"
-        android:layout_height="195dp"
-        android:layout_marginTop="352dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_height="199dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.966"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
             android:layout_width="100dp"
@@ -28,20 +24,20 @@
                 android:text="1" />
 
             <Button
-                android:id="@+id/2"
+                android:id="@+id/b2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="2" />
 
             <Button
-                android:id="@+id/3"
+                android:id="@+id/b3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="3" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Button" />
 
@@ -52,19 +48,19 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/4"
+                android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4" />
 
             <Button
-                android:id="@+id/5"
+                android:id="@+id/b5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5" />
 
             <Button
-                android:id="@+id/6"
+                android:id="@+id/b6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="6" />
@@ -81,19 +77,19 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/7"
+                android:id="@+id/b7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="7" />
 
             <Button
-                android:id="@+id/8"
+                android:id="@+id/b8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8" />
 
             <Button
-                android:id="@+id/9"
+                android:id="@+id/b9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9" />
@@ -110,7 +106,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/0"
+                android:id="@+id/b0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -137,11 +133,11 @@
 
     <TextView
         android:id="@+id/QuadreText"
-        android:layout_width="351dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_width="287dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:text="@string/continguttext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
