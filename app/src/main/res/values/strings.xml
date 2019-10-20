@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">M8_Activitat1_EX1</string>
+    <string name="hint" />
+    <string name="continguttext">ContingutText</string>
 </resources>
